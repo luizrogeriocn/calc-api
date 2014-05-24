@@ -24,6 +24,10 @@ app.post('/mult', function(req, res) {
 	res.send('Rota de multiplicação!');	
 });
 
+app.post('/div', function(req, res) {
+	res.send('Rota de divisão!');	
+});
+
 
 
 // we'll create our routes here
