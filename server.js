@@ -8,7 +8,7 @@ var port    = 	process.env.PORT || 8888;
 // ROUTES
 // ==============================================
 
-app.get('/sample', function(req, res) {
+app.get('/', function(req, res) {
 	res.send('OI, GABI!');	
 });
 
