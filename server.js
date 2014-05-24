@@ -12,6 +12,12 @@ app.get('/', function(req, res) {
 	res.send('OI, GABI!');	
 });
 
+app.post('/add', function(req, res) {
+	res.send('OI, GABI!');	
+});
+
+
+
 // we'll create our routes here
 
 // START THE SERVER
