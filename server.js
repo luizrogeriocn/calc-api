@@ -13,7 +13,11 @@ app.get('/', function(req, res) {
 });
 
 app.post('/add', function(req, res) {
-	res.send('OI, GABI!');	
+	res.send('Rota de soma!');	
+});
+
+app.post('/sub', function(req, res) {
+	res.send('Rota de subtração!');	
 });
 
 
