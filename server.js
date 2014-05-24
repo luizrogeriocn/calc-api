@@ -20,6 +20,10 @@ app.post('/sub', function(req, res) {
 	res.send('Rota de subtração!');	
 });
 
+app.post('/mult', function(req, res) {
+	res.send('Rota de multiplicação!');	
+});
+
 
 
 // we'll create our routes here
