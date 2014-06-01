@@ -9,7 +9,7 @@ var port    = 	process.env.PORT || 8888;
 // ==============================================
 
 app.get('/', function(req, res) {
-	res.send('Read Me será aqui!');	
+	res.status(200).sendfile('./index.html');	
 });
 
 app.post('/add', function(req, res) {

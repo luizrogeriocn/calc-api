@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="Calculator">
+    <head>
+        <title>Calculadora - API</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <h1>Services</h1>
+					<h3>Add two numbers</h3>
+						<li>POST to add/:numA:numB</li>
+					<h3>Subtract two numbers</h3>
+						 <li>POST to sub/:numA:numB</li>
+					<h3>Multiply two numbers</h3>
+						<li>POST to mult/:numA:numB</li>
+					<h3>Divide two numbers</h3>
+						<li>POST to div/:numA:numB</li>
+    </body>
+</html>
