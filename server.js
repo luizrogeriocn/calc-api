@@ -1,9 +1,13 @@
 // BASE SETUP
 // ==============================================
 
-var express = require('express');
-var app     = express();
-var port    = 	process.env.PORT || 8888;
+var express			= require('express');
+var bodyParser	= require('body-parser');
+var app     		= express();
+var port    		= process.env.PORT || 8888;
+
+app.use(bodyParser());
+app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 // ROUTES
 // ==============================================
@@ -13,19 +17,27 @@ app.get('/', function(req, res) {
 });
 
 app.post('/add', function(req, res) {
-	res.send('Rota de soma!');	
+	var result = parseFloat(req.body.numA) + parseFloat(req.body.numB);
+	console.log(result);
+	res.send(result.toString());	
 });
 
 app.post('/sub', function(req, res) {
-	res.send('Rota de subtração!');	
+	var result = parseFloat(req.body.numA) - parseFloat(req.body.numB);
+	console.log(result);
+	res.send(result.toString());
 });
 
 app.post('/mult', function(req, res) {
-	res.send('Rota de multiplicação!');	
+	var result = parseFloat(req.body.numA) * parseFloat(req.body.numB);
+	console.log(result);
+	res.send(result.toString());	
 });
 
 app.post('/div', function(req, res) {
-	res.send('Rota de divisão!');	
+	var result = parseFloat(req.body.numA) / parseFloat(req.body.numB);
+	console.log(result);
+	res.send(result.toString());	
 });
 
 
