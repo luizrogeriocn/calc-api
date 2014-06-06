@@ -17,10 +17,4 @@ build:
           echo "npm version $(npm -v) running"
 
   after-steps:
-    
-    - mies/email-notify:
-	from: gcm.wercker@gmail.com
-	to: g.trindadi@gmail.com
-	username: gcm.wercker
-	password: gcmwercker
-	host: smtp.gmail.com:587
+            - hijonathan/git-tag@0.2.5
