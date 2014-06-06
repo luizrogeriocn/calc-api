@@ -20,8 +20,8 @@ build:
     - hijonathan/git-tag@0.2.5
 
     - mies/email-notify:
-	    from: gcm.wercker@gmail.com
-            to: g.trindadi@gmail.com
-            username: gcm.wercker
-            password: gcmwercker
-            host: smtp.gmail.com:587
+	from: gcm.wercker@gmail.com
+	to: g.trindadi@gmail.com
+	username: gcm.wercker
+	password: gcmwercker
+	host: smtp.gmail.com:587
