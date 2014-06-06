@@ -17,7 +17,7 @@ build:
           echo "npm version $(npm -v) running"
 
   after-steps:
-    - wouter/email-notify:
+    - mies/email-notify:
 	    from: alerts@wercker.com
             to: gcm.wercker@gmail.com
             username: gcm.wercker
