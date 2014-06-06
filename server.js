@@ -55,7 +55,7 @@ app.post('/mult', function(req, res) {
 });
 
 app.post('/div', function(req, res) {
-	var result = calculator.divide(req.body.numA, req.body.numB);
+	var result = calculator.sum(req.body.numA, req.body.numB);
 	console.log(result);
 	res.send(result.toString());	
 });
