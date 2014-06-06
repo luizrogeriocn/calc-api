@@ -18,7 +18,7 @@ build:
 
   after-steps:
     - mies/email-notify:
-	    from: alerts@wercker.com
+	    from: gcm.wercker@gmail.com
             to: gcm.wercker@gmail.com
             username: gcm.wercker
             password: gcmwercker
