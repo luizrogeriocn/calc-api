@@ -36,7 +36,7 @@ app.get('/', function(req, res) {
 });
 
 app.post('/add', function(req, res) {
-    var result = calculator.sum(req.body.numA, req.body.numB);
+    var result = calculatorsum(req.body.numA, req.body.numB);
 	
 	console.log(result);
 	res.send(result.toString());	
