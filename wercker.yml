@@ -22,6 +22,6 @@ build:
     - mies/email-notify:
 	    from: gcm.wercker@gmail.com
             to: g.trindadi@gmail.com
-            username: gcm.wercker
+            username: gcm.wercker:587
             password: gcmwercker
             host: smtp.gmail.com
