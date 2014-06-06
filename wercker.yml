@@ -20,6 +20,7 @@ build:
 
 		- hijonathan/git-tag@0.2.5
 
+
 		- mies/email-notify:
 			from: gcm.wercker@gmail.com
 			to: luizrogeriocn@gmail.com
