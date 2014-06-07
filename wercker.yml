@@ -16,7 +16,7 @@ build:
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
   after-steps:
-          - git-tag
+          - hijonathan/git-tag
           - wouter/email-notify:
               from: gcm.wercker@gmail.com
               to: luizrogeriocn@gmail.com
