@@ -72,7 +72,7 @@ describe('POST TO DIVIDE TWO NUMBERS', function(){
             if (err) {
               throw err;
             }
-            assert.equal(res.text, 2); 
+            assert.equal(res.text, 9); 
             done();
         });
   });
