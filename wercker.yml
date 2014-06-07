@@ -15,11 +15,10 @@ build:
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
-
 	after-steps:
 		- mies/email-notify:
 			from: gcm.wercker@gmail.com
 			to: luizrogeriocn@gmail.com
-			username: gcm.wercker
+			username: gcm.wercker@gmail.com
 			password: gcmwercker
 			host: smtp.gmail.com:587
