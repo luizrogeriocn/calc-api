@@ -4,7 +4,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8000;
 var calculator = require('calculator');
 
 app.use(bodyParser());
@@ -36,7 +36,7 @@ app.get('/', function(req, res) {
 });
 
 app.post('/add', function(req, res) {
-    var result = calculatorsum(req.body.numA, req.body.numB);
+    var result = calculator.sum(req.body.numA, req.body.numB);
 	
 	console.log(result);
 	res.send(result.toString());	
@@ -55,7 +55,7 @@ app.post('/mult', function(req, res) {
 });
 
 app.post('/div', function(req, res) {
-	var result = calculator.sum(req.body.numA, req.body.numB);
+	var result = calculator.divide(req.body.numA, req.body.numB);
 	console.log(result);
 	res.send(result.toString());	
 });
