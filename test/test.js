@@ -2,7 +2,8 @@ var request = require('supertest'),
     express = require('express'),
     assert = require("assert");
 
-var url = 'http://localhost:8000';
+//var url = 'http://localhost:8000';
+var url = require('../server.js');
 
 var calculation = {
   numA: 6,
